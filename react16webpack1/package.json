@@ -1,10 +1,9 @@
 {
-  "name": "react15",
+  "name": "react16",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack && ./node_modules/.bin/webpack-dev-server"
+    "start": "webpack && webpack-dev-server"
   },
   "author": "",
   "license": "ISC",
@@ -25,8 +24,9 @@
     "webpack-dev-server": "1.16.5"
   },
   "dependencies": {
-    "react": "15.6.2",
-    "react-dom": "15.6.2",
+    "react": "16.7.0",
+    "react-dom": "16.7.0",
     "react-icons": "3.2.2"
-  }
+  },
+  "description": ""
 }
