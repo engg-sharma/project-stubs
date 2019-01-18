@@ -1,0 +1,17 @@
+{
+    "env": {
+        "MONGO_ATLAS_PW": "subendra",
+        "JWT_KEY": "secretsecret",
+        "COOKIE_EXPIRES_IN": 1296000000,
+        "PORT": 3200
+    },
+    "ignore": [
+        ".git",
+        "node_modules/**/node_modules"
+    ],
+    "watch": [
+        "api/",
+        "app.js",
+        "server.js"
+    ]
+}
