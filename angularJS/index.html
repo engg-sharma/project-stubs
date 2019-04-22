@@ -1,0 +1,52 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>test</title>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="extLibs/angular-material.1.1.5.css">
+		<link rel="stylesheet" type="text/css" href="main.css">
+
+		<script type="text/javascript" src = "extLibs/angular.1.5.8.js"></script>
+		<script type="text/javascript" src = "extLibs/angular-animate.1.5.8.js"></script>
+		<script type="text/javascript" src = "extLibs/angular-aria.1.5.8.js"></script>
+		<script type="text/javascript" src = "extLibs/angular-messages.1.5.8.js"></script>
+		<script type="text/javascript" src= "extLibs/angular-material.1.1.5.js"></script>
+		<script type="text/javascript" src = "main.js"></script>
+
+  </head>
+  <body ng-app = "app">
+		<header>
+			<md-toolbar class="" ng-controller = "header">Movie Listings</md-toolbar>
+		</header>
+    <!-- <div class = "content"  ng-controller = "content"> -->
+			<md-content ng-controller = "content as content">
+				<div class = "content">
+					<section layout="row" layout-sm="column" layout-align="end" layout-wrap>
+						<md-button class="md-raised md-warn" ng-click = "content.addMovieClick($event)">Add Movie</md-button>
+					</section>
+					<div class = "moviesTableParent">
+						<table class = "moviesTable">
+							<thead>
+								<tr>
+									<td>Name</td><td>Year Of Release</td><td>Producer</td><td>Actors</td><td>Edit</td>
+								</tr>
+							</thead>
+							<tbody ng-repeat = "movie in content.movies">
+								<tr>
+									<td>{{movie.name}}</td><td>{{movie.yearOfRelease}}</td><td>{{movie.producer}}</td><td>{{movie.actors}}</td>
+									<td>
+										<md-button class="md-icon-button md-primary" aria-label="Edit" ng-click = "content.editMovieClick($event, $index)">
+											<md-icon>edit</md-icon>
+      							</md-button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</md-content>
+		<!-- </div> -->
+    <footer ng-controller = "footer">test</footer>
+  </body>
+</html>

@@ -6,3 +6,7 @@
 /expressjs/node_modules
 /expressjs-login-signup-stub/node_modules
 /react16-login-signup-stub/node_modules
+/gulpStub/node_modules
+/plainES6BoilerPlate/node_modules
+/react16.6.3Stub/node_modules
+/react16webpack4/node_modules
