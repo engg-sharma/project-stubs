@@ -1,3 +1,6 @@
+var fs = require("fs");
+var path = require("path");
+
 var MiniCssExtractPlugin = require("mini-css-extract-plugin");
 var miniCssExtractPlugin = new MiniCssExtractPlugin({filename: "index.css"});
 
@@ -45,5 +48,10 @@ module.exports = {
             }
         ] 
     },
-    plugins: [miniCssExtractPlugin]
+    plugins: [miniCssExtractPlugin],
+    resolve: {
+        alias: {
+            src: path.resolve(__dirname, "src/")
+        }
+    }
 }
